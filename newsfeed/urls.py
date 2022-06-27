@@ -6,7 +6,6 @@ from .views import SignUpUser, SignInUser, AddNews, HomeListView, NewsDetailView
 
 urlpatterns = [
     path('', HomeListView.as_view(), name='index'),
-    # path('news/<slug:slug>/', NewsDetailView.as_view(), name='news_detail'),
     path('news/<slug>/', NewsDetailView.as_view(), name='news_detail'),
     path('signup/', SignUpUser.as_view(), name='signup'),
     path('signin/', SignInUser.as_view(), name='signin'),
