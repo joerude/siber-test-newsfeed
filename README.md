@@ -42,11 +42,11 @@ Django, Django Forms, БД: MySQL или PostgreSQL
 ## Preparing
 
 The service consists of two components: Django Project and PostgreSQL database, so for its successful operation it is required
-the following software must be installed:
+the following software:
 
 - [Python 3](https://www.python.org/downloads/) >=3.6;
-- [PostgreSQL](https://www.postgresql.org/docs/current/tutorial-start.html) >=13 when launched with using your own database server 
-- or [Docker](https://www.docker.com/get-started) >=20.10.14, if there is no own database server is not available.
+- [PostgreSQL](https://www.postgresql.org/docs/current/tutorial-start.html) >=13 launching database server 
+- or [Docker](https://www.docker.com/get-started) >=20.10.14, if database server is not available.
 
 
 ## Launch
