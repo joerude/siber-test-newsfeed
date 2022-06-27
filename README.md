@@ -2,8 +2,8 @@
 - [Task](#задача-лента-новостей)
 - [Preparing](#preparing)
 - [Launch](#launch)
-- [Docker](#1-docker-compose)
-- [Local](#2-local)
+- [1. Docker](#1-docker-compose)
+- [2. Local](#2-local)
 - [Structure](#structure-tree)
 
 

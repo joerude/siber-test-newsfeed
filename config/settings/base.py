@@ -67,7 +67,6 @@ WSGI_APPLICATION = 'config.wsgi.application'
 if not DEBUG:
     DATABASES = {
         'default': {
-            # 'ENGINE': 'django.db.backends.postgresql_psycopg2',
             'ENGINE': 'django.db.backends.postgresql',
             'NAME': config('DB_NAME'),
             'USER': config('DB_USER'),
@@ -80,11 +79,11 @@ else:
     DATABASES = {
         'default': {
             'ENGINE': 'django.db.backends.postgresql',
-            'NAME': 'sibers_db',
-            'USER': 'joerude',
-            'PASSWORD': '123123',
-            'HOST': 'localhost',
-            'PORT': 5432,
+            'NAME': config('LOCAL_DB_NAME'),
+            'USER': config('LOCAL_DB_USER'),
+            'PASSWORD': config('LOCAL_DB_PASSWORD'),
+            'HOST': config('LOCAL_DB_HOST'),
+            'PORT': config('LOCAL_DB_PORT'),
         }
     }
 
