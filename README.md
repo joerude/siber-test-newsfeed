@@ -89,6 +89,9 @@ pip install -r requirements.txt
 python3 manage.py runserver
 ```
 
+Go to the link: http://0.0.0.0:8000/ or http://127.0.0.1:8000/
+
+
 ## Structure (Tree)
 
 ```
