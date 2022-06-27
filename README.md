@@ -71,11 +71,21 @@ docker-compose up
 ```
 
 ### 2. Local
+Set `DEBUG=1` in [.env](https://github.com/joerude/sibers-test-newsfeed/blob/master/.env) file
+
+Also configure your Postgres Database settings:
 ```shell
-#python3 manage.py collectstatic
-python3 manage.py makemigrations
-python3 manage.py migrate
-python3 manage.py loaddata db.json
+# LOCAL_DB_NAME=your_db
+# LOCAL_DB_USER=your_username
+# LOCAL_DB_PASSWORD=your_password
+# LOCAL_DB_HOST=localhost
+# LOCAL_DB_PORT=5432
+```
+
+```shell
+python3 -m venv env
+source env/bin/activate
+pip install -r requirements.txt
 python3 manage.py runserver
 ```
 
