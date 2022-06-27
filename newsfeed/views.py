@@ -20,20 +20,7 @@ class HomeListView(ListView):
     def get_paginate_by(self, queryset):
         return self.request.GET.get('paginate_by', self.paginate_by)
 
-
-# class NewsDetailView(View):
-#     def get(self, request, slug, *args, **kwargs):
-#         from django.http import Http404
-#         try:
-#             news = get_object_or_404(News, slug=slug)
-#         except News.DoesNotExist:
-#             raise Http404
-#
-#         return render(request, 'newsfeed/news_detail.html', context={
-#             'news': news
-#         })
-#
-
+    
 class NewsDetailView(DetailView):
     model = News
     template_name = 'newsfeed/news_detail.html'
