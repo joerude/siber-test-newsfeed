@@ -55,7 +55,7 @@ After installing the required software, you need to download (clone) the source 
 the service and go to the directory with the source code:
 
 ```shell
-git clone https://github.com/joerude/siber-test-newsfeed.git
+git clone https://github.com/joerude/sibers-test-newsfeed.git
 cd sibers-test-newsfeed
 ```
 
