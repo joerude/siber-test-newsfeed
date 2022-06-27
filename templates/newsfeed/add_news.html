@@ -1,0 +1,17 @@
+{% extends './base.html' %}
+{% load static %}
+{% block title %}Добавить новость{% endblock %}
+
+{% block content %}
+    <div class="text-center">
+
+        <h1>Добавить новость</h1>
+        <form action="" enctype='multipart/form-data' method="POST">{% csrf_token %}
+            {{ form.media }}
+            {{ form.as_p }}
+            <input type="submit" value="Save"/>
+        </form>
+    </div>
+{% endblock %}
+
+
